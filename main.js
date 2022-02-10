@@ -4,6 +4,7 @@ function updateTime() {
     var hour = getInfo.getHours();
     var minute = getInfo.getMinutes();
     var second = getInfo.getSeconds();
+    //var zone = getInfo.getTimezoneOffset(); time zone?
 
     var time = hour + ":" + minute + ":" + second;
     
@@ -17,11 +18,23 @@ function updateTime() {
 
 setInterval(updateTime, 1000);
 
-var alarmTime = 'Thu Feb 10 2022 12:25:00';
+const alarm = ('10 Jan 2022 13:57:50 GMT-05:00');
 
-if (alarmTime - getInfo = 0) {
-    alert("hey");
-}
+let alarmTimeInSeconds = Date.parse(alarm); 
+let nowTimeInSeconds = Math.floor(Date.now() / 1000);
+//let nowTimeInSeconds = Date.now(); tried this as well
+let diff = alarmTimeInSeconds - nowTimeInSeconds; // total diff
+
+function checkAlarm() {
+        if (diff == 0) {
+            alert('hey');
+    };
+};
+
+setInterval(checkAlarm, 1000);
+
+
+
 
 
 //var timeMili = getTime();
