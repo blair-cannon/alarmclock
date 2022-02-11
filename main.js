@@ -6,12 +6,12 @@ function updateTime() {
     let hour = getInfo.getHours();
     let minute = getInfo.getMinutes();
     let second = getInfo.getSeconds();
-    //let zone = getInfo.getTimezoneOffset(); time zone?
+    //let zone = getInfo.getTimezoneOffset();      time zone?
 
     let time = hour + ":" + minute + ":" + second;
-};
 
-setInterval(updateTime, 1000);
+
+    setInterval(updateTime, 1000);
     
     //if (hour < 10) {
     //    hour = "0" + hour;
@@ -33,11 +33,24 @@ setInterval(updateTime, 1000);
     //    time = time + "AM";
     // };
 
+ };
     
-    
-document.getElementById("p2").innerHTML = today;
+fuction updateDay() {
+    document.getElementById("p2").innerHTML = today;
     
     var today = (getInfo.getMonth() + 1) + "/" + getInfo.getDay() + "/" + getInfo.getFullYear();
+        
+ //       if (month < 10) {
+ //           month = "0" + month;
+ //       }
+ //       if (day < 10) {
+ //           day = "0" + day;
+ //       }
+       
+    setInterval(updateDay, 1000);
+    
+};
+
     
 
 //const alarm = ('10 Jan 2022 13:57:50 GMT-05:00');
