@@ -4,27 +4,26 @@ function updateTime() {
     let hour = getInfo.getHours();
     let minute = getInfo.getMinutes();
     let second = getInfo.getSeconds();
-    //let zone = getInfo.getTimezoneOffset();      time zone?
+    
 
     let time = hour + ":" + minute + ":" + second;
     
     document.getElementById("p1").innerHTML = time;
-    //document.getElementById("p1").innerHTML = getInfo.toLocaleTimeString();
- }
+ };
 setInterval(updateTime, 1000);
 
 function formatTime(time) {
     if (hour < 10) {
         return "0" + hour;
-    }
+    };
     
     if (minute < 10) {
        return "0" + minute;
-   }
+   };
     
     if (second < 10) {
        return "0" + second;
-   }
+   };
     
     if (hour > 12) {
        hour = hour - 12;
@@ -37,7 +36,7 @@ function formatTime(time) {
             time = time + " PM";
     };
     return time;
-}
+};
     
 function updateDay() {
     let getInfo = new Date();
@@ -49,13 +48,13 @@ function updateDay() {
         
        if (month < 10) {
            month = "0" + month;
-       }
+       };
        if (day < 10) {
            day = "0" + day;
-       }
+       };
     
     document.getElementById("p2").innerHTML = today; 
-}
+};
 setInterval(updateDay, 1000);
 
 
@@ -110,7 +109,6 @@ function alarmCheckBox() {
 
 //     let alarmTimeInSeconds = Math.floor(Date.parse(alarm) / 1000); 
 //     let nowTimeInSeconds = Math.floor(Date.now() / 1000);
-//     //let nowTimeInSeconds = Date.now(); tried this as well
 //     let diff = alarmTimeInSeconds - nowTimeInSeconds; // total diff
 //     document.getElementById("Countdown").innerHTML = diff;
 //        if (diff == 0) {
