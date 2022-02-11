@@ -1,15 +1,15 @@
 document.getElementById("p1").innerHTML = time;
 
 function updateTime() {
-    var getInfo = new Date();
+    let getInfo = new Date();
 
-    var hour = getInfo.getHours();
-    var minute = getInfo.getMinutes();
-    var second = getInfo.getSeconds();
-    //var zone = getInfo.getTimezoneOffset(); time zone?
+    let hour = getInfo.getHours();
+    let minute = getInfo.getMinutes();
+    let second = getInfo.getSeconds();
+    //let zone = getInfo.getTimezoneOffset(); time zone?
 
-    var time = hour + ":" + minute + ":" + second;
-}
+    let time = hour + ":" + minute + ":" + second;
+};
 
 setInterval(updateTime, 1000);
     
