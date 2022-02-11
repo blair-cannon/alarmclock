@@ -9,16 +9,25 @@ function updateTime() {
     var time = hour + ":" + minute + ":" + second;
     
     if (hour < 10) {
-        "0" + hour;
+        hour = "0" + hour;
     };
     
      if (minute < 10) {
-        "0" + minute;
+        minute = "0" + minute;
     };
     
      if (second < 10) {
-        "0" + second;
+        second = "0" + second;
     };
+    
+    if (hour >= 12) {
+        time = (hour - 12) + ":" + minute + ":" + second + "PM";
+        
+    } else (hour < 12) {
+        time = hour + ":" + minute + ":" + second + "AM";
+    }
+
+    
     
     document.getElementById("p1").innerHTML = time;
     
