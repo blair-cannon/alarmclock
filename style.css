@@ -1,0 +1,57 @@
+
+html {
+    margin: 0;
+    padding: 0;
+    background-color: darkkhaki;
+}
+
+
+#p1 {
+    font-family: lucida console; /** monospaced for digital clock look **/
+    font-size: 13em;
+    padding: 20px;
+    color: white;
+    margin: 200px 0px 0px 0px;
+    text-align: center;
+}
+
+#p2 {
+    color: maroon;
+    font-weight: bold;
+    font-size: 5em;
+    text-align: center;
+    margin: 0;
+}
+
+/** #Countdown {
+    color: maroon;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+} **/
+
+
+.inputAlarm {
+    display:flex;
+    justify-content: center;
+}
+
+.alarmButtons {
+    display:flex;
+    justify-content: center;
+}
+
+.checkboxInput {
+    display:flex;
+    justify-content: center;
+    color: blue;
+}
+
+#text {
+    margin: 0;
+}
+
+#othertext {
+    margin: 0;
+}
+

@@ -2,14 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel=""stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Alarm Clock</title>
 </head>
 <body>
-    <h1>Current date and time</h1>
-    <p id="p1"></p>
-    <p id="p2"></p>
-    
+        <p id="p1"></p>
+        <p id="p2"></p>
+       <!-- <p id="Countdown">Countdown:</p> -->
+       <div class="checkboxInput">
+            <input type="checkbox" id="alarmCheck" onclick="alarmCheckBox()">
+            <p id="text" style="display:none">Alarm Input ON</p>
+            <p id="othertext" style="display:none">Alarm Input Hidden</p>
+        </div>
+        <div id="alarmAppearence">
+            <div class = "inputAlarm">
+                <input onchange="setAlarmTime(this.value)" name="alarmTime" type="datetime-local">
+            </div>
+            <div class="alarmButtons">
+                <button onClick="setAlarm()" class="button set-alarm">Set Alarm</button>
+                <button onClick="clearAlarm()" class="button clear-alarm">Clear Alarm</button>
+            </div>
+        </div>
     <script src="main.js"></script>
 </body>
 </html>
