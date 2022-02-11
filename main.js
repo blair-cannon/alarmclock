@@ -9,6 +9,9 @@ function updateTime() {
     //var zone = getInfo.getTimezoneOffset(); time zone?
 
     var time = hour + ":" + minute + ":" + second;
+}
+
+setInterval(updateTime, 1000);
     
     //if (hour < 10) {
     //    hour = "0" + hour;
@@ -36,11 +39,6 @@ document.getElementById("p2").innerHTML = today;
     
     var today = (getInfo.getMonth() + 1) + "/" + getInfo.getDay() + "/" + getInfo.getFullYear();
     
-    
-
-//had to make it a function to apply the interval, couldn't use jsut the variables
-
-setInterval(updateTime, 1000);
 
 //const alarm = ('10 Jan 2022 13:57:50 GMT-05:00');
 
