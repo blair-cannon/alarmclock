@@ -12,21 +12,21 @@ function updateTime() {
         hour = "0" + hour;
     };
     
-    // if (minute < 10) {
-    //    minute = "0" + minute;
-    //};
+     if (minute < 10) {
+        minute = "0" + minute;
+    };
     
-    // if (second < 10) {
-    //    second = "0" + second;
-    //};
+     if (second < 10) {
+        second = "0" + second;
+    };
     
-    //if (hour >= 12) {
-    //    hour = hour - 12;
-    //    time = time + "PM";
+    if (hour >= 12) {
+        hour = hour - 12;
+        time = time + "PM";
    
-    //} else (hour < 12) {
-    //    time = time + "AM";
-    // };
+    } else (hour < 12) {
+        time = time + "AM";
+     };
 
     
     
@@ -40,20 +40,30 @@ function updateTime() {
 
 setInterval(updateTime, 1000);
 
-const alarm = ('10 Jan 2022 13:57:50 GMT-05:00');
+//const alarm = ('10 Jan 2022 13:57:50 GMT-05:00');
 
-let alarmTimeInSeconds = Date.parse(alarm); 
-let nowTimeInSeconds = Math.floor(Date.now() / 1000);
+//let alarmTimeInSeconds = Date.parse(alarm); 
+//let nowTimeInSeconds = Math.floor(Date.now() / 1000);
 //let nowTimeInSeconds = Date.now(); tried this as well
-let diff = alarmTimeInSeconds - nowTimeInSeconds; // total diff
+//let diff = alarmTimeInSeconds - nowTimeInSeconds; // total diff
 
-function checkAlarm() {
-        if (diff == 0) {
-            alert('hey');
-    };
-};
+//function checkAlarm() {
+//        if (diff == 0) {
+//            alert('hey');
+//    };
+//};
 
-setInterval(checkAlarm, 1000);
+//setInterval(checkAlarm, 1000);
+
+
+
+
+
+
+
+
+
+
 
 
 
