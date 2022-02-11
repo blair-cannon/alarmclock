@@ -8,31 +8,31 @@ function updateTime() {
 
     var time = hour + ":" + minute + ":" + second;
     
-    if (hour < 10) {
-        hour = "0" + hour;
-    };
+    //if (hour < 10) {
+    //    hour = "0" + hour;
+    //};
     
-     if (minute < 10) {
-        minute = "0" + minute;
-    };
+   //  if (minute < 10) {
+   //     minute = "0" + minute;
+   // };
     
-     if (second < 10) {
-        second = "0" + second;
-    };
+   //  if (second < 10) {
+   //     second = "0" + second;
+   // };
     
-    if (hour >= 12) {
-        hour = hour - 12;
-        time = time + "PM";
+    //if (hour >= 12) {
+    //    hour = hour - 12;
+    //    time = time + "PM";
    
-    } else (hour < 12) {
-        time = time + "AM";
-     };
+    //} else (hour < 12) {
+    //    time = time + "AM";
+    // };
 
     
     
     document.getElementById("p1").innerHTML = time;
     
-    var today = getInfo.getMonth() + "/" + getInfo.getDay() + "/" + getInfo.getFullYear();
+    var today = (getInfo.getMonth() + 1) + "/" + getInfo.getDay() + "/" + getInfo.getFullYear();
     
     document.getElementById("p2").innerHTML = today;
 }
