@@ -52,22 +52,19 @@ fuction updateDay() {
 };
 
     
-
-//const alarm = ('10 Jan 2022 13:57:50 GMT-05:00');
-
-//let alarmTimeInSeconds = Date.parse(alarm); 
-//let nowTimeInSeconds = Math.floor(Date.now() / 1000);
-//let nowTimeInSeconds = Date.now(); tried this as well
-//let diff = alarmTimeInSeconds - nowTimeInSeconds; // total diff
-
 //function checkAlarm() {
+    //let alarm = ('10 Jan 2022 13:57:50 GMT-05:00');
+
+    //let alarmTimeInSeconds = Date.parse(alarm); 
+    //let nowTimeInSeconds = Math.floor(Date.now() / 1000);
+    //let nowTimeInSeconds = Date.now(); tried this as well
+    //let diff = alarmTimeInSeconds - nowTimeInSeconds; // total diff
+
 //        if (diff == 0) {
 //            alert('hey');
 //    };
-//};
-
-//setInterval(checkAlarm, 1000);
-
+    //setInterval(checkAlarm, 1000);
+// };
 
 
 
