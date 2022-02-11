@@ -1,3 +1,5 @@
+document.getElementById("p1").innerHTML = time;
+
 function updateTime() {
     var getInfo = new Date();
 
@@ -30,12 +32,12 @@ function updateTime() {
 
     
     
-    document.getElementById("p1").innerHTML = time;
+document.getElementById("p2").innerHTML = today;
     
     var today = (getInfo.getMonth() + 1) + "/" + getInfo.getDay() + "/" + getInfo.getFullYear();
     
-    document.getElementById("p2").innerHTML = today;
-}
+    
+
 //had to make it a function to apply the interval, couldn't use jsut the variables
 
 setInterval(updateTime, 1000);
