@@ -12,21 +12,21 @@ function updateTime() {
         hour = "0" + hour;
     };
     
-     if (minute < 10) {
-        minute = "0" + minute;
-    };
+    // if (minute < 10) {
+    //    minute = "0" + minute;
+    //};
     
-     if (second < 10) {
-        second = "0" + second;
-    };
+    // if (second < 10) {
+    //    second = "0" + second;
+    //};
     
-    if (hour >= 12) {
-        hour = hour - 12;
-        time = time + "PM";
+    //if (hour >= 12) {
+    //    hour = hour - 12;
+    //    time = time + "PM";
    
-    } else (hour < 12) {
-        time = time + "AM";
-    };
+    //} else (hour < 12) {
+    //    time = time + "AM";
+    // };
 
     
     
