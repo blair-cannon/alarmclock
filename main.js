@@ -8,6 +8,18 @@ function updateTime() {
 
     var time = hour + ":" + minute + ":" + second;
     
+    if (hour < 10) {
+        "0" + hour;
+    };
+    
+     if (minute < 10) {
+        "0" + minute;
+    };
+    
+     if (second < 10) {
+        "0" + second;
+    };
+    
     document.getElementById("p1").innerHTML = time;
     
     var today = getInfo.getMonth() + "/" + getInfo.getDay() + "/" + getInfo.getFullYear();
