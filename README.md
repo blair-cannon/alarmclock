@@ -7,9 +7,9 @@ Alarm Clock
 A webpage that displays an alarm clock, in a digital display format. 
 
 ## Tech Stack
-HTML
-CSS
-JS
+HTML 
+CSS 
+JS 
 
 ## Requirements
 - Display the current time in a digital clock format
