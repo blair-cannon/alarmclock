@@ -40,20 +40,17 @@ function formatTime(time) {
     
 function updateDay() {
     let getInfo = new Date();
-    let month = getInfo.getMonth() + 1;
-    let day = getInfo.getDay() + 6;
-    let year = getInfo.getFullYear();
-
-    let today = month + "/" + day + "/" + year;
-        
-       if (month < 10) {
-           month = "0" + month;
-       };
-       if (day < 10) {
-           day = "0" + day;
-       };
+    let yyyy = getInfo.getFullYear();
+    let mm = getInfo.getMonth() + 1; // Months start at 0!
+    let dd = getInfo.getDate();
     
-    document.getElementById("p2").innerHTML = today; 
+    if (dd < 10) dd = '0' + dd;
+    if (mm < 10) mm = '0' + mm;
+    
+    let today = mm + '/' + dd + '/' + yyyy;
+    
+    document.getElementById("p2").innerHTML = today;
+        
 };
 setInterval(updateDay, 1000);
 
