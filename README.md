@@ -7,8 +7,8 @@ Alarm Clock
 A webpage that displays an alarm clock, in a digital display format. 
 
 ## Tech Stack
-HTML 
-CSS 
+HTML <br />
+CSS <br />
 JS 
 
 ## Requirements
