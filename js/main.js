@@ -5,38 +5,35 @@ function updateTime() {
     let minute = getInfo.getMinutes();
     let second = getInfo.getSeconds();
     
+    if (hour < 10) {
+        hour = "0" + hour;
+    };
+    
+    if (minute < 10) {
+       minute = "0" + minute;
+    };
+
+    if (second < 10) {
+       second = "0" + second;
+    };
 
     let time = hour + ":" + minute + ":" + second;
-    
+
+    if (hour > 12) {
+        hour = hour - 12;
+        time = time + "PM";
+
+    } else if(hour < 12) {
+        time = time + " AM";
+
+    } else if(hour = 12) {
+        time = time + " PM";
+    };
+
     document.getElementById("p1").innerHTML = time;
  };
 setInterval(updateTime, 1000);
 
-function formatTime(time) {
-    if (hour < 10) {
-        return "0" + hour;
-    };
-    
-    if (minute < 10) {
-       return "0" + minute;
-   };
-    
-    if (second < 10) {
-       return "0" + second;
-   };
-    
-    if (hour > 12) {
-       hour = hour - 12;
-       time = time + "PM";
-   
-    } else if(hour < 12) {
-       time = time + " AM";
-
-    } else if(hour = 12) {
-            time = time + " PM";
-    };
-    return time;
-};
     
 function updateDay() {
     let getInfo = new Date();
